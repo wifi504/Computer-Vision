@@ -1,5 +1,3 @@
-##https://blog.csdn.net/xiaohuolong1827/article/details/123698593
-
 import numpy as np
 import cv2
 import matplotlib.pyplot as plt
@@ -111,7 +109,7 @@ def corner_nms(corner, kernal=3):
 
 
 if __name__ == '__main__':
-    img_src = cv2.imread('../../img/Eiffel-Tower.png', -1)
+    img_src = cv2.imread('../../img/Text.png', -1)
     if len(img_src.shape) == 3:
         img_src = cv2.cvtColor(img_src, cv2.COLOR_BGR2GRAY)
     corner = susan_corner_detect(img_src)
