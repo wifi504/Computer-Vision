@@ -61,7 +61,7 @@ def harris_corner_detect(img_src, block_size=2, aperture_size=3, k=0.04, borderT
 
 
 if __name__ == '__main__':
-    img_src = cv2.imread('../../img/Pain Mask.png', cv2.IMREAD_GRAYSCALE)
+    img_src = cv2.imread('../../img/Pain-Mask.png', cv2.IMREAD_GRAYSCALE)
     # source code
     res_arr = harris_corner_detect(img_src, block_size=2, aperture_size=3, k=0.04)
     max_v = np.max(res_arr)

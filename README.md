@@ -18,7 +18,7 @@ SUSAN 算子
 
 My Code: [src/susan/](src/susan/)
 
-Test Case: [img/Eiffel Tower.png](img/Eiffel Tower.png)
+Test Case: [img/Eiffel-Tower.png](img/Eiffel-Tower.png)
 
 ### 3.3 哈里斯兴趣点算子
 
@@ -26,4 +26,4 @@ Harris 算子
 
 My Code: [src/harris/](src/harris/)
 
-Test Case: [img/Pain Mask.png](img/Pain Mask.png)
+Test Case: [img/Pain-Mask.png](img/Pain-Mask.png)

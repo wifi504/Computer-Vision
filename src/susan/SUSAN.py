@@ -111,7 +111,7 @@ def corner_nms(corner, kernal=3):
 
 
 if __name__ == '__main__':
-    img_src = cv2.imread('../../img/Eiffel Tower.png', -1)
+    img_src = cv2.imread('../../img/Eiffel-Tower.png', -1)
     if len(img_src.shape) == 3:
         img_src = cv2.cvtColor(img_src, cv2.COLOR_BGR2GRAY)
     corner = susan_corner_detect(img_src)
