@@ -30,8 +30,6 @@ SUSAN算法采用圆形模板，其目的是使检测达到各向同性；
 
 故将图像每点上的USAN区面积作为该处特征的显著性度量，USAN区面积越小，特征越显著。
 
-2.
-
 ## 2. 代码实现 [SUSAN.py](SUSAN.py)
 
 > 参考：[https://blog.csdn.net/xiaohuolong1827/article/details/123698593](https://blog.csdn.net/xiaohuolong1827/article/details/123698593)
