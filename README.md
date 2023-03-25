@@ -12,7 +12,7 @@ My Code: [src/sobel/](src/sobel/)
 
 Test Case: [img/elephant.png](img/elephant.png)
 
-### 3.2 角点和边缘检测
+### 3.2 角点检测
 
 SUSAN 算子
 
@@ -27,3 +27,5 @@ Harris 算子
 My Code: [src/harris/](src/harris/)
 
 Test Case: [img/Pain-Mask.png](img/Pain-Mask.png)
+
+### 3.4 哈弗变换
