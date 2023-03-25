@@ -8,7 +8,7 @@
 
 Sobel 算子
 
-My Code: [src/sobel/](src/sobel/)
+My Code & Doc: [src/sobel/](src/sobel/)
 
 Test Case: [img/elephant.png](img/elephant.png)
 
@@ -16,7 +16,7 @@ Test Case: [img/elephant.png](img/elephant.png)
 
 SUSAN 算子
 
-My Code: [src/susan/](src/susan/)
+My Code & Doc: [src/susan/](src/susan/)
 
 Test Case: [img/Eiffel-Tower.png](img/Eiffel-Tower.png)
 
