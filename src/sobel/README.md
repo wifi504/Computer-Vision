@@ -116,9 +116,8 @@ cv2.destroyAllWindows()
 
 ### 3.2 测试用例
 
-<img align="left" src="../../img/elephant.png" alt="elephant" style="zoom:70%;" />
-
+![../../img/elephant.png](../../img/elephant.png)
 
 ### 3.3 测试结果
 
-<img align="left" src="Test/Test-Output.png" alt="elephant" style="zoom:130%;" />
+![Test/Test-Output.png](Test/Test-Output.png)
