@@ -1,5 +1,3 @@
-##https://blog.csdn.net/xiaohuolong1827/article/details/125559091
-
 # coding=utf8
 import numpy as np
 from PIL import Image
@@ -12,8 +10,8 @@ import scipy.ndimage
 import time
 import scipy
 
-
-def harris_corner_detect(img_src, block_size=2, aperture_size=3, k=0.04, borderType=cv2.BORDER_DEFAULT):
+# 经过测试，block_size=3 的效果会好于2，详见文档
+def harris_corner_detect(img_src, block_size=3, aperture_size=3, k=0.04, borderType=cv2.BORDER_DEFAULT):
     if img_src.dtype != np.uint8:
         raise ("input image shoud be uint8 type")
     R_arr = np.zeros(img_src.shape, dtype=np.float32)  # 用来存储角点响应值
