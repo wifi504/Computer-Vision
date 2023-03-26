@@ -113,3 +113,9 @@ def harris_corner_detect(img_src, block_size=3, aperture_size=3, k=0.04, borderT
 ### 4. 输出结果
 
 ![Test/Test.png](Test/Test.png)
+
+### 5.练习
+
+很好，你已经入门计算机视觉了，下面来尝试下生成插画吧！
+
+![](../../img/kokomi.png)
