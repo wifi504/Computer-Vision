@@ -8,13 +8,8 @@ import math
 from HoughT import Hough_transform
 from cannyd import Canny
 
-
-
-
-    
-    
-Path = 'F:/autumn.jpg'   # 图片路径
-Save_Path = 'F:/'        # 结果保存路径
+Path = '../../img/Chiral-carbon.png'   # 图片路径
+Save_Path = 'Test/'        # 结果保存路径
 Reduced_ratio = 2    # 为了提高计算效率，将图片进行比例缩放所使用的比例值
 Guassian_kernal_size = 3  
 HT_high_threshold = 45
