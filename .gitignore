@@ -1,3 +1,6 @@
 venv
 /venv/
 /homework/
+
+# 编译文件
+*.pyc
