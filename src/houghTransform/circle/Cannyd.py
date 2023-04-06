@@ -11,7 +11,7 @@ class Canny:
         :param HT_high_threshold: 滞后阈值法中的高阈值
         :param HT_low_threshold: 滞后阈值法中的低阈值
         '''
-        self.Guassian_kernal_size = Guassian_kernal_size  # 获取高斯核尺寸
+        self.Gaussian_kernel_size = Guassian_kernal_size  # 获取高斯核尺寸
         self.img = img  # 获取图片
         self.y, self.x = img.shape[0:2]  # 获取图片的维度
         self.angle = np.zeros([self.y, self.x])  # 定义一个新的矩阵，用来存储梯度方向
@@ -161,7 +161,7 @@ class Canny:
         按照顺序和步骤调用以上所有成员函数。
         :return: Canny 算法的结果
         '''
-        self.img = cv2.GaussianBlur(self.img, (self.Guassian_kernal_size, self.Guassian_kernal_size), 0)
+        self.img = cv2.GaussianBlur(self.img, (self.Gaussian_kernel_size, self.Gaussian_kernel_size), 0)
         self.Get_gradient_img()
         self.img_origin = self.img.copy()
         self.Non_maximum_suppression()
