@@ -13,7 +13,7 @@ class Hough_transform:
         '''
         self.img = img
         self.angle = angle
-        self.y, self.x = img.shape[0:2]  
+        self.y, self.x = img.shape[0:2]
         self.radius = math.ceil(math.sqrt(self.y ** 2 + self.x ** 2))
         self.step = step
         self.vote_matrix = np.zeros(
@@ -36,7 +36,7 @@ class Hough_transform:
                     y = i
                     x = j
                     r = 0
-                    while y < self.y and x < self.x and y >= 0 and x >= 0: # 保证圆心在图像内
+                    while y < self.y and x < self.x and y >= 0 and x >= 0:  # 保证圆心在图像内
                         self.vote_matrix[math.floor(y / self.step)][math.floor(x / self.step)][
                             math.floor(r / self.step)] += 1
                         # 为了避免 y / self.step 向上取整会超出矩阵索引的情况，这里将该值向下取整
@@ -53,7 +53,7 @@ class Hough_transform:
                         y = y - self.step * self.angle[i][j]
                         x = x - self.step
                         r = r + math.sqrt((self.step * self.angle[i][j]) ** 2 + self.step ** 2)
-        return self.vote_matrix   # 返回投票矩阵
+        return self.vote_matrix  # 返回投票矩阵
 
     def Select_Circle(self):
         '''
@@ -62,13 +62,13 @@ class Hough_transform:
         return: None
         '''
         print('Select_Circle')
-		# 挑选投票数大于阈值的圆
+        # 挑选投票数大于阈值的圆
         houxuanyuan = []
         for i in range(0, math.ceil(self.y / self.step)):
             for j in range(0, math.ceil(self.x / self.step)):
                 for r in range(0, math.ceil(self.radius / self.step)):
                     if self.vote_matrix[i][j][r] >= self.threshold:
-                        y = i * self.step + self.step / 2   # 通过投票矩阵中的点，恢复到原图中的点，self.step / 2为补偿值
+                        y = i * self.step + self.step / 2  # 通过投票矩阵中的点，恢复到原图中的点，self.step / 2为补偿值
                         x = j * self.step + self.step / 2
                         r = r * self.step + self.step / 2
                         houxuanyuan.append((math.ceil(x), math.ceil(y), math.ceil(r)))
@@ -79,7 +79,7 @@ class Hough_transform:
         possible = []
         middle = []
         for circle in houxuanyuan:
-            if abs(x - circle[0]) <= 20 and abs(y - circle[1]) <= 20: 
+            if abs(x - circle[0]) <= 20 and abs(y - circle[1]) <= 20:
                 # 设定一个误差范围（这里设定方圆20个像素以内，属于误差范围），在这个范围内的到圆心视为同一个圆心
                 possible.append([circle[0], circle[1], circle[2]])
             else:
@@ -98,7 +98,7 @@ class Hough_transform:
         # 重复类似上述取均值的操作，并将圆逐个输出
         x, y, r = middle[0]
         possible = []
-        for circle in middle:  
+        for circle in middle:
             if abs(x - circle[0]) <= 20 and abs(y - circle[1]) <= 20:
                 possible.append([circle[0], circle[1], circle[2]])
             else:

@@ -44,7 +44,7 @@ class Canny:
                     # x方向卷积后的灰度图，dx
 
         gradient_img, self.angle = cv2.cartToPolar(new_img_x, new_img_y)  # 通过dx，dy求取梯度强度和梯度方向即角度
-        self.angle = np.tan(self.angle) 
+        self.angle = np.tan(self.angle)
         self.img = gradient_img.astype(np.uint8)  # 将获得梯度强度转换成无符号八位整形
         return self.img
 
