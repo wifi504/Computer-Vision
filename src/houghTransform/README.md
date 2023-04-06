@@ -373,6 +373,7 @@ cv2.GaussianBlur(src, ksize, sigmaX[, dst[, sigmaY[, borderType]]]) -> dst
    - 定义了两个全零的矩阵 `new_img_x` 和 `new_img_y`，它们的大小与输入图像相同，用于存储梯度图的x方向偏导数和y方向偏导数。
 
    - 通过循环遍历图像的所有像素点，逐一计算出每个像素点的偏导数。具体实现中，通过卷积操作，分别计算出每个像素点在x方向和y方向的偏导数，并分别存储在`new_img_x`和`new_img_y`中。这里使用的卷积核分别是`x_kernal`和`y_kernal`，它们分别对应x方向和y方向的偏导数计算公式：
+
      $$
      \frac{\partial{I}}{\partial{x}} \approx \begin{bmatrix}-1&1\end{bmatrix} * I
      $$
