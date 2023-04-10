@@ -1,6 +1,7 @@
 venv
 /venv/
 /homework/
+/.idea/
 
 # 编译文件
 *.pyc
