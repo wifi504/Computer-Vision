@@ -36,3 +36,10 @@ My Code & Doc: [src/houghTransform/](src/houghTransform/)
 
 Test Case: [img/bubble.png](img/bubble.png) [img/house.png](img/house.png) [img/Chiral-carbon.png](img/Chiral-carbon.png) 
 
+## 4 显著性检测
+
+LC算法、ITTI算法
+
+My Code & Doc : [src/significanceTesting](src/significanceTesting)
+
+Test Case: [img/scenery2.png](img/scenery2.png)
