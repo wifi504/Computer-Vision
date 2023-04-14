@@ -88,5 +88,5 @@ if __name__ == "__main__":
     #     thread = Thread(target=main, args={img, })
     #     thread.start()
 
-    file = "../../img/scenery2.png"
+    file = "../../../img/scenery2.png"
     main(file)

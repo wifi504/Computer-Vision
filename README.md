@@ -38,8 +38,11 @@ Test Case: [img/bubble.png](img/bubble.png) [img/house.png](img/house.png) [img/
 
 ## 4 显著性检测
 
-LC算法、ITTI算法
+### 4.1 ITTI算法
 
-My Code & Doc : [src/significanceTesting](src/significanceTesting)
+### 4.2 LC算法
+
+My Code & Doc : [src/significanceTesting/lc](src/significanceTesting/lc)
 
 Test Case: [img/scenery2.png](img/scenery2.png)
+
