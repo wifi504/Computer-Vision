@@ -40,9 +40,13 @@ Test Case: [img/bubble.png](img/bubble.png) [img/house.png](img/house.png) [img/
 
 ### 4.1 ITTI算法
 
+My Code & Doc: [src/significanceTesting/ITTI](src/significanceTesting/ITTI)
+
+Test Case: [img/scenery1.png](img/scenery1.png)
+
 ### 4.2 LC算法
 
-My Code & Doc : [src/significanceTesting/lc](src/significanceTesting/lc)
+My Code & Doc: [src/significanceTesting/lc](src/significanceTesting/lc)
 
 Test Case: [img/scenery2.png](img/scenery2.png)
 
